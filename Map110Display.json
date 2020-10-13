@@ -32,7 +32,7 @@
                      "scale": {
                           "domain": [4, 8]
                         }},
-            "color": {"field": "depth", 
+            "color": {"field": "dep", 
                       "type": "quantitative",
                       "scale":{
                           "scheme":"blues"
