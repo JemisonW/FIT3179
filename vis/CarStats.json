@@ -6,9 +6,17 @@
   "data": {
     "url": "https://raw.githubusercontent.com/JemisonW/FIT3179/main/Data/CarStats.csv"
   },
+  "transform": [
+    {"joinaggregate": [{"op":"sum","field":"OCCURRENCE","as":"TOTAL"}]},
+    {"calculate":"datum.OCCURRENCE/datum.TOTAL *100","as":"PERCENTAGE"}
+  ],
   "mark":"arc",
   "encoding": {
     "color": {"field": "OUTCOME", "title":"Outcome"},
-    "theta":{"aggregate":"sum", "field":"OCCURRENCE", "title":"Incidents"}
+    "theta":{"aggregate":"sum", "field":"OCCURRENCE", "title":"Incidents"},
+    "tooltip":[
+      {"field":"OCCURRENCE", "title":"Incidents"},
+      {"field":"PERCENTAGE", "title":"Percentage", "format":".4"}
+    ]
   }
 }
