@@ -1,0 +1,20 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "Number of Incidents by Day of Week",
+  "width": 800,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/JemisonW/FIT3179/main/Data/IncidentsPerWeekday.csv"
+  },
+  "mark":"bar",
+  "encoding": {
+    "x": {"field": "WEEK_DAY", "title":"Day of the week","sort":"null"},
+    "y":{"aggregate":"sum", "field":"INCIDENTS", "title":"Incidents"},
+    "color":{"field":"WEEK_DAY"}
+  },
+  "config": {
+    "legend":{
+      "disable":true
+    }
+  }
+}
