@@ -9,21 +9,31 @@
 </head>
 <body>
 
-<div id="vis"></div>
-<div id="vis2"></div>
+<div id="chloropleth"></div>
+<div id="weekdays"></div>
+<div id="lighting"></div>  
+<div id="carpie"></div>  
+<div id="bikepie"></div>  
+<div id="speedfatality"></div>  
+<div id="months"></div>  
 
 <script type="text/javascript">
-  
-  var spec = "https://jemisonw.github.io/FIT3179/Map110Display.json";
   var chloropleth = "https://raw.githubusercontent.com/JemisonW/FIT3179/main/vis/CrashesPer1000Chloro.json"
+  var weekdays = "https://raw.githubusercontent.com/JemisonW/FIT3179/main/vis/ByWeekDays.json"
+  var lighting = "https://raw.githubusercontent.com/JemisonW/FIT3179/main/vis/ByLighting.json"
+  var carpie = "https://raw.githubusercontent.com/JemisonW/FIT3179/main/vis/CarStats.json"
+  var bikepie = "https://raw.githubusercontent.com/JemisonW/FIT3179/main/vis/MotorcycleOutcomes.json"
+  var speedfatality = "https://raw.githubusercontent.com/JemisonW/FIT3179/main/vis/SpeedFatalityLikelihood.json"
+  var months = "https://raw.githubusercontent.com/JemisonW/FIT3179/main/vis/IncidentsPerMonth.json"
   
-  vegaEmbed('#vis', spec).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
+  vegaEmbed('#chloropleth', chloropleth).then(function(result) {}).catch(console.error);
+  vegaEmbed('#weekdays', weekdays).then(function(result) {}).catch(console.error);
+  vegaEmbed('#lighting', lighting).then(function(result) {}).catch(console.error);
+  vegaEmbed('#carpie', carpie).then(function(result) {}).catch(console.error);
+  vegaEmbed('#bikepie', bikepie).then(function(result) {}).catch(console.error);
+  vegaEmbed('#speedfatality', speedfatality).then(function(result) {}).catch(console.error);
+  vegaEmbed('#months', months).then(function(result) {}).catch(console.error);
   
-  vegaEmbed('#vis2', chloropleth).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
 </script>
   
 </body>
