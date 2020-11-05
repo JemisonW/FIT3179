@@ -1,0 +1,14 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "Likely Outcome of Recorded Car Accidents",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/JemisonW/FIT3179/main/Data/CarStats.csv"
+  },
+  "mark":"arc",
+  "encoding": {
+    "color": {"field": "OUTCOME", "title":"Outcome"},
+    "theta":{"aggregate":"sum", "field":"OCCURRENCE", "title":"Incidents"}
+  }
+}
