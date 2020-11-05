@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "Likely Outcome of Motocycle Incident",
+  "title": "Results of Motocycle Accidents",
   "width": 400,
   "height": 400,
   "data": {
