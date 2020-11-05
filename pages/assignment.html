@@ -10,20 +10,21 @@
 <body>
 
 <div id="vis"></div>
+<div id="vis2"></div>
 
 <script type="text/javascript">
   
   var spec = "https://jemisonw.github.io/FIT3179/Map110Display.json";
-  vegaEmbed('#vis', spec).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-</script>
-<script type="text/javascript">
+  var chloropleth = "https://raw.githubusercontent.com/JemisonW/FIT3179/main/vis/CrashesPer1000Chloro.json"
   
-  var spec = "https://jemisonw.github.io/FIT3179/Map110Display.json";
   vegaEmbed('#vis', spec).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
+  
+  vegaEmbed('#vis2', chloropleth).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
 </script>
+  
 </body>
 </html>
