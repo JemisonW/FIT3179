@@ -6,9 +6,28 @@
   "data": {
     "url": "https://raw.githubusercontent.com/JemisonW/FIT3179/main/Data/FatalitySpeed.csv"
   },
-  "mark":"line",
+  "layer":[
+  {"mark":"line",
   "encoding": {
     "x":{"field":"SPEED","sort":null, "type": "quantitative"},
-    "y":{"field":"FATALITY_LIKELIHOOD", "title":"Percent Chance of Fatality", "type": "quantitative"}
+    "y":{"field":"FATALITY_LIKELIHOOD", "title":"Percent Chance of Fatality", "type": "quantitative"},
+    "tooltip":[
+      {"field":"SPEED","title":"Speed"},
+      {"field":"FATALITY_LIKELIHOOD","title":"Likelihood of Fatality (%)"}
+    ]
   }
+  },
+  {"mark":{
+    "type":"circle",
+    "size":100
+  },
+  "encoding": {
+    "x":{"field":"SPEED","sort":null, "type": "quantitative", "title":"Speed (km/h)"},
+    "y":{"field":"FATALITY_LIKELIHOOD", "title":"Percent Chance of Fatality", "type": "quantitative"},
+    "tooltip":[
+      {"field":"SPEED","title":"Speed"},
+      {"field":"FATALITY_LIKELIHOOD","title":"Likelihood of Fatality (%)"}
+    ]
+  }}
+  ]
 }
