@@ -27,6 +27,11 @@
       "title":"",
       "field":"Per1000",
       "scale":{"type": "log"}
-    }
+    },
+    "tooltip":[
+      {"field":"LGA_NAME", "title":"Council"},
+      {"field":"POPULATION", "title":"Population"},
+      {"field":"INCIDENTS","title":"Reported Accidents"}
+    ]
   }
 }
