@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "Number of Crashes per 1000 people",
+  "width": 800,
+  "height": 400,
+  "projection": {"type": "equirectangular"},
+  "data": {
+    "url": "https://raw.githubusercontent.com/JemisonW/FIT3179/main/councils.json",
+    "format": {"type": "topojson", "feature": "features"}
+  },
+  "transform": [
+    {
+      "lookup": "properties.vic_lga__3",
+      "from" : {
+        "data": {
+          "url": "https://raw.githubusercontent.com/JemisonW/FIT3179/main/Data/IncidentsPerLGA.csv"
+        },
+        "key":"LGA_NAME",
+        "fields": ["INCIDENTS","LGA_NAME","POPULATION"]
+      }
+    },
+    {"calculate": "datum.INCIDENTS/datum.POPULATION *1000", "as":"Per1000"}
+  ],
+  "mark":{"type": "geoshape"},
+  "encoding": {
+    "color":{
+      "title":"",
+      "field":"Per1000",
+      "scale":{"type": "log"}
+    }
+  }
+}
