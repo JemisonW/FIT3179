@@ -6,9 +6,17 @@
   "data": {
     "url": "https://raw.githubusercontent.com/JemisonW/FIT3179/main/Data/MotorbikeStats.csv"
   },
+  "transform": [
+    {"joinaggregate": [{"op":"sum","field":"OCCURENCE","as":"TOTAL"}]},
+    {"calculate":"datum.OCCURENCE/datum.TOTAL *100","as":"PERCENTAGE"}
+  ],
   "mark":"arc",
   "encoding": {
-    "color": {"field": "OUTCOME", "title":"Lighting Conditions"},
-    "theta":{"aggregate":"sum", "field":"OCCURENCE", "title":"Incidents"}
+    "color": {"field": "OUTCOME", "title":"Outcome"},
+    "theta":{"aggregate":"sum", "field":"OCCURENCE", "title":"Incidents"},
+    "tooltip":[
+      {"field":"OCCURENCE", "title":"Incidents"},
+      {"field":"PERCENTAGE", "title":"Percentage", "format":".4"}
+    ]
   }
 }
