@@ -9,12 +9,16 @@
   "mark":"bar",
   "encoding": {
     "x": {"field": "MONTH", "title":"Month","sort":"null"},
-    "y":{"aggregate":"sum", "field":"INCIDENTS", "title":"Incidents"},
-    "color":{"field":"MONTH"}
+    "y":{"aggregate":"sum", "field":"INCIDENTS", "title":"Accidents"},
+    "color":{"field":"MONTH"},
+    "tooltip":[
+      {"field":"INCIDENTS", "title":"Accidents"}
+    ]
   },
   "config": {
     "legend":{
       "disable":true
-    }
+    },
+    "axisX": {"labelAngle":0}
   }
 }
