@@ -6,9 +6,17 @@
   "data": {
     "url": "https://raw.githubusercontent.com/JemisonW/FIT3179/main/Data/IncidentsVSLighting.csv"
   },
+    "transform": [
+    {"joinaggregate": [{"op":"sum","field":"INCIDENTS","as":"TOTAL"}]},
+    {"calculate":"datum.INCIDENTS/datum.TOTAL *100","as":"PERCENTAGE"}
+  ],
   "mark":"arc",
   "encoding": {
     "color": {"field": "LIGHTING", "title":"Lighting Conditions"},
-    "theta":{"aggregate":"sum", "field":"INCIDENTS", "title":"Incidents"}
+    "theta":{"aggregate":"sum", "field":"INCIDENTS", "title":"Incidents"},
+    "tooltip":[
+      {"field":"INCIDENTS", "title":"Incidents"},
+      {"field":"PERCENTAGE", "title":"Percentage", "format":".4"}
+    ]
   }
 }
