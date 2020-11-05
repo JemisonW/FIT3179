@@ -1,0 +1,14 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "Likelihood of Fatality vs Speed",
+  "width": 800,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/JemisonW/FIT3179/main/Data/FatalitySpeed.csv"
+  },
+  "mark":"line",
+  "encoding": {
+    "x":{"field":"SPEED","sort":null, "type": "quantitative"},
+    "y":{"field":"FATALITY_LIKELIHOOD", "title":"Percent Chance of Fatality", "type": "quantitative"}
+  }
+}
