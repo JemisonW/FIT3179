@@ -30737,15 +30737,40 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-text-1 {
-  margin: 2px auto 39px 0;
+  margin: 2px 492px 0 32px;
+}
+
+.u-header .u-text-2 {
+  margin: 10px auto 1px 32px;
 }
 @media (max-width: 1199px) {
+  .u-header .u-sheet-1 {
+    min-height: 130px;
+  }
+
   .u-header .u-menu-1 {
     width: auto;
   }
+
+  .u-header .u-text-1 {
+    margin-right: 324px;
+    margin-left: 0;
+  }
+
+  .u-header .u-text-2 {
+    margin-left: 0;
+  }
 }
-
-
+@media (max-width: 991px) {
+  .u-header .u-text-1 {
+    margin-right: 104px;
+  }
+}
+@media (max-width: 767px) {
+  .u-header .u-text-1 {
+    margin-right: 0;
+  }
+}
 
 .u-footer {
   background-image: none;
