@@ -2,8 +2,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": "Number of Incidents by Day of Week",
-  "width": 600,
-  "height": 400,
+  "width": 610,
+  "height": 305,
+  "background":"transparent",
+  "view":{"stroke":"transparent"},
   "data": {
     "url": "https://raw.githubusercontent.com/JemisonW/FIT3179/main/Data/IncidentsPerWeekday.csv"
   },
