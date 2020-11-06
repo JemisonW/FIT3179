@@ -17,6 +17,7 @@
     "color": {"field": "OUTCOME", "title":"Outcome"},
     "theta":{"aggregate":"sum", "field":"OCCURENCE", "title":"Incidents"},
     "tooltip":[
+      {"field":"OUTCOME","title":"Outcome"},
       {"field":"OCCURENCE", "title":"Incidents"},
       {"field":"PERCENTAGE", "title":"Percentage", "format":".4"}
     ]
