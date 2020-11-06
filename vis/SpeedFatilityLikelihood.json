@@ -4,6 +4,7 @@
   "width": 615,
   "height": 305,
   "background":"transparent",
+  "view":{"stroke":"transparent"},
   "data": {
     "url": "https://raw.githubusercontent.com/JemisonW/FIT3179/main/Data/FatalitySpeed.csv"
   },
