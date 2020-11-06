@@ -3,6 +3,7 @@
   "title": "Number of Crashes per 1000 people",
   "width": 600,
   "height": 360,
+  "background": "null",
   "projection": {"type": "equirectangular"},
   "data": {
     "url": "https://raw.githubusercontent.com/JemisonW/FIT3179/main/councils.json",
