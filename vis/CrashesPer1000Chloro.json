@@ -29,7 +29,7 @@
       "title":"",
       "field":"Per1000",
       "scale":{"type": "log"},
-      "legend":{"direction": "horizontal","labelOverlap":"parity", "format":".3"}
+      "legend":{"disable":"true"}
     },
     "tooltip":[
       {"field":"LGA_NAME", "title":"Council"},
