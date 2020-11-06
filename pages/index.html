@@ -81,5 +81,24 @@
         <span>Website Builder Software</span>
       </a>. 
     </section>
+	  
+<script type="text/javascript">
+  var chloropleth = "https://raw.githubusercontent.com/JemisonW/FIT3179/main/vis/CrashesPer1000Chloro.json"
+  var weekdays = "https://raw.githubusercontent.com/JemisonW/FIT3179/main/vis/ByWeekDays.json"
+  var lighting = "https://raw.githubusercontent.com/JemisonW/FIT3179/main/vis/ByLighting.json"
+  var carpie = "https://raw.githubusercontent.com/JemisonW/FIT3179/main/vis/CarStats.json"
+  var bikepie = "https://raw.githubusercontent.com/JemisonW/FIT3179/main/vis/MotorcycleOutcomes.json"
+  var speedfatality = "https://raw.githubusercontent.com/JemisonW/FIT3179/main/vis/SpeedFatilityLikelihood.json"
+  var months = "https://raw.githubusercontent.com/JemisonW/FIT3179/main/vis/IncidentsPerMonth.json"
+  
+  vegaEmbed('#chloropleth', chloropleth).then(function(result) {}).catch(console.error);
+  vegaEmbed('#weekdays', weekdays).then(function(result) {}).catch(console.error);
+  vegaEmbed('#lighting', lighting).then(function(result) {}).catch(console.error);
+  vegaEmbed('#carpie', carpie).then(function(result) {}).catch(console.error);
+  vegaEmbed('#bikepie', bikepie).then(function(result) {}).catch(console.error);
+  vegaEmbed('#speedfatality', speedfatality).then(function(result) {}).catch(console.error);
+  vegaEmbed('#months', months).then(function(result) {}).catch(console.error);
+  
+</script>
   </body>
 </html>
