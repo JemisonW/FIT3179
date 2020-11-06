@@ -18,5 +18,8 @@
       {"field":"OCCURRENCE", "title":"Incidents"},
       {"field":"PERCENTAGE", "title":"Percentage", "format":".4"}
     ]
+  },
+  "config":{
+      "legend":{"disable":true}
   }
 }
