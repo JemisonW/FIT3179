@@ -4,6 +4,7 @@
   "width": 300,
   "height": 300,
   "background":"transparent",
+  "view":{"stroke":"transparent"},
   "data": {
     "url": "https://raw.githubusercontent.com/JemisonW/FIT3179/main/Data/MotorbikeStats.csv"
   },
