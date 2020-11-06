@@ -21,14 +21,15 @@
         "fields": ["INCIDENTS","LGA_NAME","POPULATION"]
       }
     },
-    {"calculate": "datum.INCIDENTS/datum.POPULATION *1000", "as":"Per1000"}
+    {"calculate": "datum.INCIDENTS/datum.POPULATION*1000", "as":"Per1000"}
   ],
   "mark":{"type": "geoshape"},
   "encoding": {
     "color":{
       "title":"",
       "field":"Per1000",
-      "scale":{"type": "log"}
+      "scale":{"type": "log"},
+      "legend":{"direction": "horizontal","labelOverlap":"parity", "format":".3"}
     },
     "tooltip":[
       {"field":"LGA_NAME", "title":"Council"},
