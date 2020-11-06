@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html style="font-size: 16px;">
   <head>
-	  
-	  	  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
-  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
-  <!-- Import vega-embed -->
-  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="keywords" content="Reducing Risks On The Road">
@@ -19,10 +12,7 @@
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 2.29.5, nicepage.com">
-    
-    
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-    
     
     
     <script type="application/ld+json">{
@@ -70,7 +60,7 @@
         <div class="u-border-2 u-border-grey-75 u-container-style u-group u-white u-group-1">
           <div class="u-container-layout u-valign-top u-container-layout-1">
             <div class="u-clearfix u-custom-html u-custom-html-1">
-              <div width="618" height="375" id="chloropleth"></div>
+              <div id="chloropleth"></div>
             </div>
             <p class="u-large-text u-text u-text-font u-text-variant u-text-1">Something about Chloropleths, some bullshit I can write later blah blah blahSomething about Chloropleths, some bullshit I can write later blah blah blah</p>
           </div>
@@ -86,45 +76,25 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="u-clearfix u-section-2" id="sec-6609">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <div id="carousel-fc23" data-interval="5000" data-u-ride="carousel" class="u-carousel u-slider u-slider-1">
-          <ol class="u-absolute-hcenter u-carousel-indicators u-carousel-indicators-1">
-            <li data-u-target="#carousel-fc23" class="u-active u-grey-30" data-u-slide-to="0"></li>
-            <li data-u-target="#carousel-fc23" class="u-grey-30" data-u-slide-to="1"></li>
-          </ol>
-          <div class="u-carousel-inner" role="listbox">
-            <div class="u-active u-carousel-item u-container-style u-slide">
-              <div class="u-container-layout u-valign-middle u-container-layout-1">
-                <div class="u-clearfix u-custom-html u-custom-html-1">
-                  <div id="chloropleth"></div>
-                </div>
-              </div>
-            </div>
-            <div class="u-carousel-item u-container-style u-slide">
-              <div class="u-container-layout u-valign-middle u-container-layout-2">
-                <div class="u-clearfix u-custom-html u-custom-html-2">
-                  <div id="carpie"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-spacing-5 u-text-grey-30 u-carousel-control-1" href="#carousel-fc23" role="button" data-u-slide="prev">
-            <span aria-hidden="true">
-              <svg viewBox="0 0 477.175 477.175"><path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
-                    c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"></path></svg>
-            </span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="u-absolute-vcenter u-carousel-control u-carousel-control-next u-spacing-5 u-text-grey-30 u-carousel-control-2" href="#carousel-fc23" role="button" data-u-slide="next">
-            <span aria-hidden="true">
-              <svg viewBox="0 0 477.175 477.175"><path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
-                    c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"></path></svg>
-            </span>
-            <span class="sr-only">Next</span>
-          </a>
+        <div class="u-clearfix u-custom-html u-custom-html-4">
+          <script type="text/javascript"> var chloropleth = "https://raw.githubusercontent.com/JemisonW/FIT3179/main/vis/CrashesPer1000Chloro.json"
+  var weekdays = "https://raw.githubusercontent.com/JemisonW/FIT3179/main/vis/ByWeekDays.json"
+  var lighting = "https://raw.githubusercontent.com/JemisonW/FIT3179/main/vis/ByLighting.json"
+  var carpie = "https://raw.githubusercontent.com/JemisonW/FIT3179/main/vis/CarStats.json"
+  var bikepie = "https://raw.githubusercontent.com/JemisonW/FIT3179/main/vis/MotorcycleOutcomes.json"
+  var speedfatality = "https://raw.githubusercontent.com/JemisonW/FIT3179/main/vis/SpeedFatilityLikelihood.json"
+  var months = "https://raw.githubusercontent.com/JemisonW/FIT3179/main/vis/IncidentsPerMonth.json"
+  
+  vegaEmbed('#chloropleth', chloropleth).then(function(result) {}).catch(console.error);
+  vegaEmbed('#weekdays', weekdays).then(function(result) {}).catch(console.error);
+  vegaEmbed('#lighting', lighting).then(function(result) {}).catch(console.error);
+  vegaEmbed('#carpie', carpie).then(function(result) {}).catch(console.error);
+  vegaEmbed('#bikepie', bikepie).then(function(result) {}).catch(console.error);
+  vegaEmbed('#speedfatality', speedfatality).then(function(result) {}).catch(console.error);
+  vegaEmbed('#months', months).then(function(result) {}).catch(console.error); </script><!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+          <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+          <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script><!-- Import vega-embed -->
+          <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
         </div>
       </div>
     </section>
@@ -144,23 +114,5 @@
         <span>Website Builder Software</span>
       </a>. 
     </section>
-	  <script type="text/javascript">
-  var chloropleth = "https://raw.githubusercontent.com/JemisonW/FIT3179/main/vis/CrashesPer1000Chloro.json"
-  var weekdays = "https://raw.githubusercontent.com/JemisonW/FIT3179/main/vis/ByWeekDays.json"
-  var lighting = "https://raw.githubusercontent.com/JemisonW/FIT3179/main/vis/ByLighting.json"
-  var carpie = "https://raw.githubusercontent.com/JemisonW/FIT3179/main/vis/CarStats.json"
-  var bikepie = "https://raw.githubusercontent.com/JemisonW/FIT3179/main/vis/MotorcycleOutcomes.json"
-  var speedfatality = "https://raw.githubusercontent.com/JemisonW/FIT3179/main/vis/SpeedFatilityLikelihood.json"
-  var months = "https://raw.githubusercontent.com/JemisonW/FIT3179/main/vis/IncidentsPerMonth.json"
-  
-  vegaEmbed('#chloropleth', chloropleth).then(function(result) {}).catch(console.error);
-  vegaEmbed('#weekdays', weekdays).then(function(result) {}).catch(console.error);
-  vegaEmbed('#lighting', lighting).then(function(result) {}).catch(console.error);
-  vegaEmbed('#carpie', carpie).then(function(result) {}).catch(console.error);
-  vegaEmbed('#bikepie', bikepie).then(function(result) {}).catch(console.error);
-  vegaEmbed('#speedfatality', speedfatality).then(function(result) {}).catch(console.error);
-  vegaEmbed('#months', months).then(function(result) {}).catch(console.error);
-  
-</script>
   </body>
 </html>
