@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html style="font-size: 16px;">
   <head>
+	  
+	  	  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
+  <!-- Import vega-embed -->
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="keywords" content="Reducing Risks On The Road">
@@ -137,5 +144,23 @@
         <span>Website Builder Software</span>
       </a>. 
     </section>
+	  <script type="text/javascript">
+  var chloropleth = "https://raw.githubusercontent.com/JemisonW/FIT3179/main/vis/CrashesPer1000Chloro.json"
+  var weekdays = "https://raw.githubusercontent.com/JemisonW/FIT3179/main/vis/ByWeekDays.json"
+  var lighting = "https://raw.githubusercontent.com/JemisonW/FIT3179/main/vis/ByLighting.json"
+  var carpie = "https://raw.githubusercontent.com/JemisonW/FIT3179/main/vis/CarStats.json"
+  var bikepie = "https://raw.githubusercontent.com/JemisonW/FIT3179/main/vis/MotorcycleOutcomes.json"
+  var speedfatality = "https://raw.githubusercontent.com/JemisonW/FIT3179/main/vis/SpeedFatilityLikelihood.json"
+  var months = "https://raw.githubusercontent.com/JemisonW/FIT3179/main/vis/IncidentsPerMonth.json"
+  
+  vegaEmbed('#chloropleth', chloropleth).then(function(result) {}).catch(console.error);
+  vegaEmbed('#weekdays', weekdays).then(function(result) {}).catch(console.error);
+  vegaEmbed('#lighting', lighting).then(function(result) {}).catch(console.error);
+  vegaEmbed('#carpie', carpie).then(function(result) {}).catch(console.error);
+  vegaEmbed('#bikepie', bikepie).then(function(result) {}).catch(console.error);
+  vegaEmbed('#speedfatality', speedfatality).then(function(result) {}).catch(console.error);
+  vegaEmbed('#months', months).then(function(result) {}).catch(console.error);
+  
+</script>
   </body>
 </html>
