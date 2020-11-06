@@ -1,8 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": "Number of Incidents by Month",
-  "width": 800,
-  "height": 400,
+  "width": 615,
+  "height": 305,
+  "background":"transparent",
+  "view":{"stroke":"transparent"},
   "data": {
     "url": "https://raw.githubusercontent.com/JemisonW/FIT3179/main/Data/IncidentsPerMonth.csv"
   },
